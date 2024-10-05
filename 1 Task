@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите целое число a: ");
+        int numberA = scanner.nextInt();
+        System.out.print("Введите целое число b: ");
+        int numberB = scanner.nextInt();
+        
+        if (numberA==numberB){
+               System.out.print(numberA + " = " + numberB);
+        }
+            if (numberA > numberB) {
+               System.out.print(numberA + " > " + numberB);
+        }
+           else
+               System.out.print(numberA + " < " + numberB);
+        
+
+        System.out.println("\nСложение: a + b = " + (numberA+numberB));
+        System.out.println("Вычитание: a - b = " + (numberA-numberB));
+        System.out.println("Умножение: a * b = " + (numberA*numberB));
+        System.out.println("Деление: a : b = " + (numberA/numberB));
+    }
+}
